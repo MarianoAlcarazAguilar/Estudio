@@ -21,9 +21,9 @@ CREATE TABLE doctor (
 Ahora creamos un contador para que las id se agreguen automáticamente.
 
 ```sql
-CREATE SEQUENCE doctor_id_doctor_seq START 1 INCREMENT 1;
-ALTER TABLE doctor ALTER COLUMN id_doctor 
-SET DEFAULT nextval('doctor_id_doctor_seq');
+create sequence _seq start 1 increment 1;
+alter table  alter column _id
+set default nextval('_seq');
 ```
 
 ### Creación de tablas intermedias
