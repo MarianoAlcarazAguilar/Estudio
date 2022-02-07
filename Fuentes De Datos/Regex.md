@@ -21,7 +21,6 @@ It's a way to search through text.
 
 ### Special Characters
 
-
 - `+` Quantifier. Matches 1 or more of the preceding token.
 - `?` Optional. The preceding token is optional.
 - `*` Quantifier. Matches 0 or more of the preceding token.
@@ -43,6 +42,27 @@ It's a way to search through text.
 - `(?<!)` Negative look behind. Matches averything except whatever has the specified text before it.
 - `(?=)` Positive look ahead.
 - `(?!)` Negative look ahead.
+
+## Explanations
+
+- `[abc]` Finds a,b or c
+- `[^abc]` Any character except a,b or c
+- `[a-z]` a to z
+- `[A-Z]` A to Z
+- `[a-zA-Z]` a to z, A to Z
+- `[0-9]` 0 to 9
+
+- `[]?` 0 or 1 time
+- `[]+` 1 or more
+- `[]*` 0 or more
+- `[]{n}` excatly n times
+- `[]{n,}` n or more
+- `[]{n,m}` between n and m times
+
+- `\d` is like `[0-9]`
+- `\D` is like `[^0-9]`
+- `\w` is like `[a-zA-Z0-9_]`
+- `\W` is like `[^\w]`
 
 ## Examples
 
@@ -67,6 +87,8 @@ Valida nombres de usuarios
 `/(?=^.{6,}$)((?=.*\w)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[|!"$%&\/\(\)\?\^\'\\\+\-\*]))^.*/g`
 Valida un password: Al menos 1 mayúscula, 1 minúscula, 1 número y 1 caracter especial
 Primer grupo: que al menos sea de 6 caracteres
+
+
 
 
 
