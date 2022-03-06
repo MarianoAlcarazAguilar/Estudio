@@ -123,3 +123,9 @@ Para filtrar sobre agrupaciones
 grouped = df.groupby('country').agg({'columna1':'sum', 'columna2': 'mean', 'columna3': 'max'})
 grouped[grouped['columna1'] > 100]
 ```
+
+### Guardado de archivos
+```python
+grouped.to_csv('title_output.csv')
+```
+
