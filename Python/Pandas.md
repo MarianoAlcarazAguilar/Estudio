@@ -183,6 +183,26 @@ grouped = df.groupby('country').agg({'columna1':'sum', 'columna2': 'mean', 'colu
 grouped[grouped['columna1'] > 100]
 ```
 
+### Joins
+El primero hace un inner join
+El segundo hace outer join. Si quieres saber en cuál de las dos estaba, entonces agregas indicator=True
+El tercero hace un left join. Si quieres right es obvio lo que hay que hacer
+```python
+df = pd.merge(tabla1, tabla2, on='id_name')
+df = pd.merge(tabla1, tabla2, on='id_name', how='outer')
+df = pd.merge(tabla1, tabla2, on='id_name', how='left')
+```
+
+Cuando no tienes el mismo nombre de columnas en las tablas se hace así
+```python
+df = pd.merge(tabla1, tabla2, left_on='id_name_in_table1', right_on='id_name_in_table2')
+```
+
+Para hacer join con múltiples columnas
+```python
+df = pd.merge(tabla1, tabla2, how='inner', left_on=['Product_ID','Seller_City'],right_on=['Product_ID','City'])
+```
+
 ### Guardado de archivos
 ```python
 grouped.to_csv('title_output.csv')
