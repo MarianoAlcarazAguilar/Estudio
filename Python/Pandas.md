@@ -12,7 +12,7 @@ Básicamente son tablas de excel. Está compuesto por filas y columnas. Cada col
 Cada columna es identificada por un nombre y un índice, empezando en 0.
 Cada fila es identificada por un índice.
 
-### Abrir Documentos
+## Abrir Documentos
 
 En este caso crea los índices para las filas automáticamente empezando desde cero.
 ```python
@@ -33,7 +33,7 @@ Describe devuelve estadísticos descriptivos de la información. Regresa otro da
 df.describe()
 ```
 
-### Limpieza de Datos
+## Limpieza de Datos
 
 Cuando tenemos valores nulos se pueden quitar usando dropna. Elimina los valores que tengan NaN. 
 Si queremos sustituir los NaN por un valor fijo podemos especificarlo con fillna. En este caso estamos llenando con 0.
@@ -45,7 +45,7 @@ df_llenado_esp = df.fillna({'columna1':0, 'columna2': 'no'})
 ```
 
 
-### Filtrado de Datos
+## Filtrado de Datos
 
 #### Read Headers
 Regesa el título de las columnas en una lista
@@ -110,7 +110,7 @@ Se pone drop = True para que elimine los viejos índices
 new_df = new_df.reset_index(drop=True)
 ```
 
-### Sorting
+## Sorting
 El primero ordena por la columna 1
 El segundo también pero en orden inverso
 El tercero lo hace por varias columnas
@@ -122,7 +122,7 @@ df.sort_values(['columna1', 'columna2'])
 df.sort_values(['columna1', 'columna2'], ascending=[1,0])
 ```
 
-### Transformación de Datos
+## Transformación de Datos
 Por ejemplo para convertir una columna que está en centímetros a metros.
 ```python
 def convierteMetros(cm):
@@ -158,7 +158,7 @@ df.loc[df['columna1'] > 50, ['columna2','columna3']] = ['adios','perro']
 df = df.drop(columns=['columnaN'])
 ```
 
-### Agrupación de Datos
+## Agrupación de Datos
 Agrupemos por país, y apliquemos promedio a las otras columnas
 Agrupemos por país y por idioma y apliquemos suma
 ```python
@@ -183,7 +183,7 @@ grouped = df.groupby('country').agg({'columna1':'sum', 'columna2': 'mean', 'colu
 grouped[grouped['columna1'] > 100]
 ```
 
-### Joins
+## Joins
 El primero hace un inner join
 El segundo hace outer join. Si quieres saber en cuál de las dos estaba, entonces agregas indicator=True
 El tercero hace un left join. Si quieres right es obvio lo que hay que hacer
@@ -203,7 +203,7 @@ Para hacer join con múltiples columnas
 df = pd.merge(tabla1, tabla2, how='inner', left_on=['Product_ID','Seller_City'],right_on=['Product_ID','City'])
 ```
 
-### Guardado de archivos
+## Guardado de archivos
 ```python
 grouped.to_csv('title_output.csv')
 ```
