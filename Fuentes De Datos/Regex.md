@@ -66,27 +66,27 @@ It's a way to search through text.
 
 ## Examples
 
-`/[0-9]{3}/g`
+`/[0-9]{3}/g`  
 Busca exactamente 3 números
 
-`/^[\s]*(.*?)[\s]*$/g`
+`/^[\s]*(.*?)[\s]*$/g`  
 Regresa cadenas de texto sin espacios en blanco al inicio ni al final.
 
-`/<([a-z0-6]+)([^<]+)*(?:>(.*)>\/\1>|\s+\/>)/g`
+`/<([a-z0-6]+)([^<]+)*(?:>(.*)>\/\1>|\s+\/>)/g`  
 Regresa etiquetas HTML
 
-`/\B#(?:[a-f0-9A-F]{3}|[a-f0-9A-F]{6})\b/g`
+`/\B#(?:[a-f0-9A-F]{3}|[a-f0-9A-F]{6})\b/g`  
 Busca colores exadecimales. Las b ayudan a encapsular para que solo haya 3 o 6 pero no más dígitos. Es cuando buscas solo la parte encontrada y no todo el string
 
-`/\b[\w]+@[\w-]+(\.[\w]+)+\b/g`
+`/\b[\w]+@[\w-]+(\.[\w]+)+\b/g`  
 Valida correos electrónicos
 
-`/^[a-z0-9_-]{3,16}$/g`
+`/^[a-z0-9_-]{3,16}$/g`  
 Valida nombres de usuarios
 
-`/(?=^.{6,}$)((?=.*\w)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[|!"$%&\/\(\)\?\^\'\\\+\-\*]))^.*/g`
-Valida un password: Al menos 1 mayúscula, 1 minúscula, 1 número y 1 caracter especial
-Primer grupo: que al menos sea de 6 caracteres
+`/(?=^.{6,}$)((?=.*\w)(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[|!"$%&\/\(\)\?\^\'\\\+\-\*]))^.*/g`  
+Valida un password: Al menos 1 mayúscula, 1 minúscula, 1 número y 1 caracter especial.  
+Primer grupo: que al menos sea de 6 caracteres  
 
 
 
