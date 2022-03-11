@@ -33,14 +33,15 @@ Esto es para ver en que estatus están los archivos de la carpeta
 git status
 ```
 
-Esto es para seguir el proceso de los archivos
+Esto es para seguir el proceso de los archivos.  
 El segundo agrega todos los archivos a la vez
 ```bash
 git add fileName.txt
 git add .
 ```
 
-Esto es para crear un snapshot, un primer punto de partida. Commit es básicamente confirmar los cambios. Pero primero tienes que hacer el add.
+Esto es para crear un snapshot, un primer punto de partida.  
+Commit es básicamente confirmar los cambios. Pero primero tienes que hacer el add.  
 Con el segundo te evitas entrar al editor.
 ```bash
 git commit
@@ -50,17 +51,17 @@ git commit
 git commit -m "mensaje aquí"
 ```
 
-Si modificas un archivo y lo quieres regresar al estado anterior, entonces usas checkout
+Si modificas un archivo y lo quieres regresar al estado anterior, entonces usas checkout.  
 ```bash
 git checkout -- fileName.txt
 ```
 
-Para ver la diferencia entre el archivo después de los cambios
+Para ver la diferencia entre el archivo después de los cambios.
 ```bash
 git diff fileName.txt
 ```
 
-Con esto puedes ver todas las versiones del documento
+Con esto puedes ver todas las versiones del documento.
 ```bash
 git log
 ```
@@ -81,9 +82,9 @@ git checkout newBranchName
 
 Abrir repositorios y agregamos nuevo repositorio.
 
-Para conectarlo a internet primero copias el link del repositorio y luego lo metes en el siguiente comando
-El primero crea el repositorio.
-Lo segundo le dice que suba los archivos al gitHub. 
+Para conectarlo a internet primero copias el link del repositorio y luego lo metes en el siguiente comando.  
+El primero crea el repositorio.  
+Lo segundo le dice que suba los archivos al gitHub.   
 ```bash
 git remote add origin https://github.com/MarianoAlcarazAguilar/...
 git push -u origin master
