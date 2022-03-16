@@ -12,6 +12,15 @@ Básicamente son tablas de excel. Está compuesto por filas y columnas. Cada col
 Cada columna es identificada por un nombre y un índice, empezando en 0.
 Cada fila es identificada por un índice.
 
+## Creación de un DataFrame
+Esto es cuando tienes los datos y les quieres dar formato de DataFrame
+```python
+nombres = ['mariano','ximena',rodrigo','jose','esna']
+edades = [20,20,21,21,20]
+datos = {'nombre':nombres, 'edad':edades}
+dataFrame = pd.DataFrame(datos)
+```
+
 ## Abrir Documentos
 
 En este caso crea los índices para las filas automáticamente empezando desde cero.
