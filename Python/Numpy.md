@@ -9,6 +9,10 @@ Linear algebra
 
 ## Basics
 
+```py
+import numpy as np
+```
+
 ### Lists vs Arrays
 Basically arrays are vectors. Which means you can treat them as one.  
 ```py
