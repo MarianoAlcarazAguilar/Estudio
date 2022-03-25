@@ -101,7 +101,10 @@ El último elimina las filas donde la columna1 incluya hola
 ```python
 df[df['columna1'] > 50]
 df[(df['columna1'] > 50) & (df['columna2'] > 90)]
+# Este funciona para substrings
 df[df['textColumn'].str.contains('Programa')]
+# Este funciona para match exactos usando regex
+df[df['textColumn'].str.match(r'^a')]
 df.loc[df['columna1'] == 'valor1']
 df.loc[~df['columna1'].str.contains('hola')]
 ```
