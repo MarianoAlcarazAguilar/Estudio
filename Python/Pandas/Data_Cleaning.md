@@ -1,5 +1,9 @@
 # Data Cleaning
 
+```py
+import pandas as pd
+```
+
 Abramos los datos primero
 ```python
 data = pd.read_csv('/home/user/Documents/FuentesDeDatos/datasets/weatherTest.csv')
