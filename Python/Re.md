@@ -3,9 +3,6 @@
 This package allows you to use regex in python.  
 I just want to have a place where I can find all the included functions.  
 
-```py
-
-```
 
 ## Compile
 #### re.compile(pattern, flags)
