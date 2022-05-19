@@ -22,7 +22,7 @@ conda activate my_new_env
 ### Guardar requerimientos del environment
 Esto es para que sea replicable después.
 ```bash
-conda freeze > requirements.txt
+pip freeze > requirements.txt
 ```
 En este caso los estamos guardando en un archivo que se llama requirementes.
 
