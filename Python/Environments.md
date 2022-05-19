@@ -26,3 +26,7 @@ conda freeze > requirements.txt
 ```
 En este caso los estamos guardando en un archivo que se llama requirementes.
 
+### Salir de un environment
+```bash
+conda deactivate
+```
