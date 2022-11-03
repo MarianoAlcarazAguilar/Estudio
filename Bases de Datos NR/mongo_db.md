@@ -510,3 +510,19 @@ db.collection.aggregate([
 ~~~ 
 
 
+
+### Stage `$lookup`
+
+Básicamente funciona como un **join**.
+
+~~~js
+db.orders.aggregate(
+   [
+      {$lookup: {
+         from: 'inventory', 
+         localField: 'item', 
+         foreignField: 'sku', 
+         as: 'inventory_docs'}
+      }
+   ]
+)
