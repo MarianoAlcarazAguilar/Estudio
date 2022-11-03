@@ -14,6 +14,7 @@ mkdir data
 # Creamos el docker en sí
 docker run -p 27017:27017 \
       # Esto crea un volumen
+      # Aquí es importante destacar que el path a la carpeta de donde va a salir el volumne tiene que ser full path, sino no jala
        - v ~/data:/data/db \
       # Esto también crea un volumen
       # Un puto volumen es básicamente los datos
