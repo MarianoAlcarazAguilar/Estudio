@@ -32,32 +32,6 @@ select *
 
 ~~~ 
 
-## Instalar MonetDB
-
-Con lo siguiente bajamos monetdb y lo tenemos corriendo en un contenedor de nombre monetdb
-
-~~~sh
-docker volumne create monet-data
-doker stop monetdb
-docker rm monetdb
-docker run \
-       -v monet-data:/var/monetdb5/dbfarm \
-       -p 50001:50000 \
-       --name monetdb \
-       -d monetdb/monetdb:latest
-~~~
-
-Ahroa para correr comandos sobre la base de datos
-~~~sh
-docker exec -it monetdb /bin/bash
-# Y adentro podemos crear una base de datos que se llame ITAM
-monetdb create -p monetdb ITAM
-~~~
-
-Ahora, para entrar en el shell de monetdb, corremos el siguiente comando
-~~~sh
-docker exec -it monetdb mclient ITAM
-~~~
 
 ## Pasos para insertar datos
 
