@@ -527,3 +527,7 @@ db.orders.aggregate(
       }
    ]
 )
+~~~
+
+### Queries vistos en clases
+
