@@ -487,7 +487,7 @@ Aquí están algunas de las funciones que se pueden usar en el group
 | $max | Regresa el máximo de cada grupo | 
 | $mergeObjects | Después de armar los grupos, combina los objetos que correspondan al grupo en uno solo |
 | $min | Regresa el mínimo de cada grupo |
-| stdDevPop | Regresa la desviación estándar de la población de cada grupo |
+| $stdDevPop | Regresa la desviación estándar de la población de cada grupo |
 | $sum | Suma acumulativa de cada grupo | 
 
 ### Stage `$sort` & `$limit`
