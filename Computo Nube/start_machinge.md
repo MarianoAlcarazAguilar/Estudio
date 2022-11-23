@@ -2,6 +2,8 @@
 
 Para esto usaremos [Amazon Web Services](https://aws.amazon.com).  
 
+<hr>
+
 ### Paso 1
 Crea o ingresa a tu cuenta de AWS.
 
@@ -9,12 +11,15 @@ Crea o ingresa a tu cuenta de AWS.
 <img src='./images/aws_1.jpeg' alt='imagen de aws inicio'>
 </div>
 
+<hr>
+
 ### Paso 2
 En la barra de búsqueda introduce el nombre **EC2** y selecciónalo.
 
 <div align='center'>
 <img src='./images/aws_2.jpeg' alt='imagen de busqueda aws'>
 </div>
+<hr>
 
 ### Paso 3
 Ahora crearemos la nueva instancia (esta es la computadora).  
