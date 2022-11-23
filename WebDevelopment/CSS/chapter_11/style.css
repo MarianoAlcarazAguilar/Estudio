@@ -1,0 +1,28 @@
+body {
+    background-color: silver;
+    color: white;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: #ffffff;
+    background-color: hsla(0, 100%, 100%, 0.5);
+    color: #64645A;
+    padding: inherit;
+}
+
+p {
+    padding: 5px;
+    margin: 0px;
+}
+
+p.zero {
+    background-color: rgb(238, 62, 128);
+}
+p.seven {
+    background-color: rgb(0, 187, 136);
+}
+p.fourteen {
+    background-color: rgb(0, 136, 221);
+}

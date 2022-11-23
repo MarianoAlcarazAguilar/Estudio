@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: bisque;
+}
+
+h1,
+h2 {
+    color: #4c80a7;
+}
+
+p {
+    color: rgba(40, 127, 66, 0.667);
+}

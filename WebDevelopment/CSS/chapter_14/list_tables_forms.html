@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lists, talbes and forms</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Poetry Workshops</h1>
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facere adipisci labore voluptates. Magnam, ducimus.
+   </p>
+   <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, veritatis!
+   </p>
+   <ul>
+      <li>Lorem ipsum dolor sit.</li>
+      <li>Modi quibusdam natus autem!</li>
+      <li>Laboriosam amet aspernatur adipisci!</li>
+   </ul>
+   <table>
+      <tr class="head">
+         <th></th>
+         <th>Natus, officiis recusandae?</th>
+         <th>Rerum, qui fugiat?</th>
+         <th>Tenetur, aut explicabo?</th>
+      </tr>
+      <tr>
+         <th>A Poetic Perspective</th>
+         <td>Lorem ipsum dolor sit.</td>
+         <td>Qui soluta fuga eos.</td>
+         <td>Ipsam rem illum vero!</td>
+      </tr>
+      <tr class="even">
+         <th>Lorem ipsum dolor sit.</th>
+         <td>Lorem ipsum dolor sit amet.</td>
+         <td>Laudantium fugit assumenda amet aut.</td>
+         <td>Optio nobis sapiente provident eum.</td>
+      </tr>
+      <tr>
+         <th>Lorem ipsum dolor sit amet consectetur adipisicing.</th>
+         <td>Lorem ipsum dolor sit amet.</td>
+         <td>Odio aspernatur ducimus exercitationem omnis.</td>
+         <td>Eos tenetur aliquid sunt labore!</td>
+      </tr>
+      <tr class="even">
+         <th>Natural Death: An Exploration</th>
+         <td>Lorem ipsum dolor sit amet.</td>
+         <td>Molestias incidunt quos minus laborum.</td>
+         <td>Illo hic ab ducimus aliquam.</td>
+      </tr>
+   </table>
+   <form action="http://www.example.com/form.php" method="get">
+      <fieldset>
+         <legend>Register your interests</legend>
+         <p>
+            <label for="name" class="title">Your name:</label>
+            <input type="text" name="name" id="name"><br>
+            <label for="email" class="title">Your email:</label>
+            <input type="text" name="email" id="email">
+         </p>
+         <p>
+            <label for="location" class="title">Your closest center:</label>
+            <select name="location" id="location">
+               <option value="ny">New York</option>
+               <option value="il">Chicago</option>
+               <option value="ca">San Francisco</option>
+            </select>
+         </p>
+         <span class="title">Are you a member?</span>
+         <label for="member">
+            <input type="radio" name="member" value="yes">Yes
+         </label>
+         <label for="member">
+            <input type="radio" name="member" value="no">No
+         </label>
+      </fieldset>
+      <div class="submit">
+         <input type="submit" value="Register">
+      </div>
+   </form>
+</body>
+</html>
