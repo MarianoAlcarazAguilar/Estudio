@@ -21,5 +21,5 @@ Ahora crearemos la nueva instancia (esta es la computadora).
 Busca la sección llamada ***Launch Instance***
 
 <div align='center'>
-<img src='./images/launch_instance.jpeg' alt='sección de creación de instancia'>
+<img src='./images/launch_instance.jpeg' alt='sección de creación de instancia' width='300px'>
 </div>
