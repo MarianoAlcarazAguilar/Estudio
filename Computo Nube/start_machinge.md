@@ -8,7 +8,7 @@ Para esto usaremos [Amazon Web Services](https://aws.amazon.com).
 Crea o ingresa a tu cuenta de AWS.
 
 <div align='center'>
-<img src='./images/aws_1.jpeg' alt='imagen de aws inicio'>
+<img src='./images/aws_1.jpeg' alt='imagen de aws inicio' width='500px'>
 </div>
 
 <hr>
@@ -17,7 +17,7 @@ Crea o ingresa a tu cuenta de AWS.
 En la barra de búsqueda introduce el nombre **EC2** y selecciónalo.
 
 <div align='center'>
-<img src='./images/aws_2.jpeg' alt='imagen de busqueda aws'>
+<img src='./images/aws_2.jpeg' alt='imagen de busqueda aws' width='600px'>
 </div>
 <hr>
 
