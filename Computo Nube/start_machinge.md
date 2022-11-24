@@ -2,7 +2,6 @@
 
 Para esto usaremos [Amazon Web Services](https://aws.amazon.com).  
 
-<hr>
 
 ### Paso 1
 Crea o ingresa a tu cuenta de AWS.
