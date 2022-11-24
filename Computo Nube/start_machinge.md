@@ -49,7 +49,7 @@ Ahora, es momento de especificar todo lo que deseemos.
 <img src='./images/tipo_instancia_3.jpeg' alt='elegir tipo de instancia' width='450px'>
 </div>
 
-4. Elige la **SSH** key que vas a usar. Yo ya tengo una que se llama test.pem, pero para crear el tuyo ver el siguiente link <a href='./test.pem'>hola</a>
+4. Elige la **SSH** key que vas a usar. Yo ya tengo una que se llama test.pem, pero para crear el tuyo ver el siguiente link <a href='./create_key_pair.md'>create_key_pair</a>
 
 <div align='center'>
 <img src='./images/key_pair_4.jpeg' alt='elegir llave' width='400px'>
