@@ -1,6 +1,6 @@
 # Incializar una máquina en la nube
 
-Para esto usaremos [Amazon Web Services](https://aws.amazon.com).  
+Para esto usaremos <a href='https://aws.amazon.com' target='_blank'>Amazon Web Services</a>
 
 
 ### Paso 1
