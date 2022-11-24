@@ -27,6 +27,9 @@ Busca la sección llamada ***Launch Instance***
 <div align='center'>
 <img src='./images/launch_instance.jpeg' alt='sección de creación de instancia' width='300px'>
 </div>
+<hr>
+
+### Paso 4
 
 Ahora, es momento de especificar todo lo que deseemos.
 
