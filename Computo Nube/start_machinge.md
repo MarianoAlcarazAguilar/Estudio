@@ -34,38 +34,38 @@ Ahora, es momento de especificar todo lo que deseemos.
 1. Nombre
 
 <div align='center'>
-<img src='./images/nombre_1.jpeg' alt='elegir nombre'>
+<img src='./images/nombre_1.jpeg' alt='elegir nombre' width='500px'>
 </div>
 
 2. Selecciona el sistema operativo. Yo siempre uso ubuntu.
 <div align='center'>
-<img src='./images/sistema_operativo_2.jpeg' alt='elegir os'>
+<img src='./images/sistema_operativo_2.jpeg' alt='elegir os' width='400px'>
 </div>
 
 3. Elige el tipo de instancia. Yo siempre uso la que es elegible para **free tier**.
 <div align='center'>
-<img src='./images/tipo_instancia_3.jpeg' alt='elegir tipo de instancia'>
+<img src='./images/tipo_instancia_3.jpeg' alt='elegir tipo de instancia' width='450px'>
 </div>
 
 4. Elige la **SSH** key que vas a usar. Yo ya tengo una que se llama test.pem, pero para crear el tuyo ver el siguiente link <a href='./test.pem'>hola</a>
 
 <div align='center'>
-<img src='./images/key_pair_4.jpeg' alt='elegir llave'>
+<img src='./images/key_pair_4.jpeg' alt='elegir llave' width='400px'>
 </div>
 
 5. Especifica los ajustes de conexión. Yo ya tengo un grupo de seguridad hecho, pero básicamente solo elegí que se pudiera acceder desde cualquier dirección IP porque sino sería un pedo estar modificando eso cada vez.
  <div align='center'>
-<img src='./images/network_settings_5.jpeg' alt='elegir tipo de instancia'>
+<img src='./images/network_settings_5.jpeg' alt='elegir tipo de instancia' width='450px'>
 </div>
 
 6. Elige el almacenamiento.
 
 <div align='center'>
-<img src='./images/storage_6.jpeg' alt='elegir tipo de instancia'>
+<img src='./images/storage_6.jpeg' alt='elegir tipo de instancia' width='400px'>
 </div>
 
 7. Activa la instancia
 
 <div align='center'>
-<img src='./images/activar_instancia_7.jpeg' alt='elegir tipo de instancia'>
+<img src='./images/activar_instancia_7.jpeg' alt='elegir tipo de instancia' width='300px'>
 </div>
