@@ -71,3 +71,9 @@ Ahora, es momento de especificar todo lo que deseemos.
 <div align='center'>
 <img src='./images/activar_instancia_7.jpeg' alt='elegir tipo de instancia' width='300px'>
 </div>
+
+8. Conectarte a la máquina
+
+~~~sh
+ssh -i location/to/key.pem ubuntu@ip_address
+~~~
