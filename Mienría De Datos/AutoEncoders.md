@@ -49,7 +49,9 @@ $$\mathbb{P}(x; \Omega) = \mathbb P (x_1, x_2, ..., x_N; \Omega)$$
 
 ANN that learns to reproduce its own input, while learning interesting data representations.
 
-<img src="./images/Screenshot 2023-02-18 at 18.26.50.png">
+<div align="center">
+<img src="./images/Screenshot 2023-02-18 at 18.26.50.png" width="300">
+</div>
 
 Intermediate output is known as $\text{latent representation}$, and denoted by $z$.
 
@@ -59,7 +61,9 @@ Intermediate output is known as $\text{latent representation}$, and denoted by $
 - Decoder
 - Regularizers (optional)
 
-<img src="./images/Screenshot 2023-02-18 at 18.26.58.png">
+<div align="center">
+<img src="./images/Screenshot 2023-02-18 at 18.26.58.png" height="300">
+</div>
 
 ### Representation Learning
 
@@ -85,7 +89,9 @@ Understanding and designing $\text{latent representations}$ can be done by princ
 ### Deep AE
 Deeper models enable more non-linear transformations, which might lead to richer latent representations
 
-<img src="./images/Screenshot 2023-02-18 at 18.27.13.png">
+<div align="center">
+<img src="./images/Screenshot 2023-02-18 at 18.27.13.png" height="300">
+</div>
 
 ### Conv AE
 <img src="./images/Screenshot 2023-02-18 at 18.27.22.png">
