@@ -2,7 +2,7 @@
 
 John the ripper is a popular open source password cracking tool that combines several different cracking programs and runs both in brute force and dictionary attack modes.
 
-It is usually used in enterprise to detect weak passwords that could put network security at risk, as well as other administrative purposes. The software can run a wide variety of password-cracking techniques against the various user accounts on each operating system and can be scripted to run locally or remotely.
+It is usually used in enterprise to detect weak passwords that could put network security at risk, as well as other administrative purposes. The software can run a wide variety of password-cracking techniques against the various user accounts on each operating system and can be scripted to run locally or remotely. 
 
 ## Dictionary Attack
 
