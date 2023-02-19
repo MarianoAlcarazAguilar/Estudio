@@ -34,7 +34,9 @@ $$(x^{(n)}, \hat x^{(n)})$$
    - Clean noisy data
    - Dimensionality reduction
 
+<div align="center">
 <img src="./images/Screenshot 2023-02-18 at 18.26.40.png" height="300">
+</div>
 
 ### Discriminative vs Generative
 
