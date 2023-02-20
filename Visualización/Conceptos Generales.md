@@ -45,3 +45,21 @@ $$
 \cdot \quad \text{No es posible realizar operaciones aritméticas}
 \end{cases}
 $$
+
+<br>
+
+$$
+\text{Ordenados} \quad
+\begin{cases}
+   \text{Ordinales} 
+   \begin{cases} 
+      \cdot \quad \text{Ordenamiento implícito o explícito}\\
+      \cdot \quad \text{Permiten hacer comparaciones y relaciones tipo} \geq = \leq \\
+   \end{cases}\\
+   \\
+   \text{Cuantitativos}
+   \begin{cases}
+      \cdot \quad \text{La magnitud tiene sentido y con base en ella se pueden hacer ordenamientos y comparaciones}\\
+      \cdot \quad \text{Permiten realizar operaciones aritméticas}\\
+   \end{cases}\\
+\end{cases}
