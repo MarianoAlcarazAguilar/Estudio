@@ -107,3 +107,50 @@ $$\mu_B = \frac{1}{M}\sum_{m=1}^Mx^{(m)}, \quad \sigma_B^2 = \frac{1}{M}\sum_{m=
 Normalize and feed to next layer:
 $$\hat x^{(m)} = \gamma \cdot \frac{x^{(m)-\mu_B}}{\sqrt{\sigma_B^2 + \epsilon}} + \beta$$
 
+## Inicializadores
+Es una forma de empezar el valor de los parámetros a estimar (de algún lugar se tiene que empezar).
+
+### Xavier Glorot
+Este es la forma tradicional de hacerlo.
+
+
+$$
+w = \mathcal{U}\left(-\frac{1}{\sqrt n},\frac{1}{\sqrt n}\right)
+$$
+
+where,
+- $n$ es el número de variables
+
+Bueno para,
+- Lineal
+- Sigmoid
+- Tanh
+
+### Normalized Xavier
+Este es un poco más estable
+
+$$
+w = \mathcal{U}\left(-\frac{\sqrt b}{\sqrt{n+m}}, \frac{\sqrt b}{\sqrt{n+m}}\right)
+$$
+
+where,
+- $n$ es el número de variables que entran a la capa
+- $m$ es el número de variables que salen de la capa
+
+Bueno para,
+- Lineal
+- Sigmoid
+- Tanh
+
+### Kaiming He
+Sin notas específicas
+
+$$
+w = \mathcal N\left(0, \sqrt{\frac{2}{n}} \right)
+$$
+
+where,
+- $n$ es el número de variables
+
+Bueno para,
+- ReLU

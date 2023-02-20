@@ -64,6 +64,8 @@ It is used to exaggerate the most probable of the elements of the vector. Useful
 ## Optimization Functions
 
 ### Momentum
+Dampens oscillation. Includes a fraction of the historic direction.  
+Es como un promedio ponderado temporal que se va desvaneciendo conforme se hacen más antiguos.
 
 $$
 w_t = w_{t-1} - v_t
@@ -80,6 +82,7 @@ $$ v_0 = 0, \gamma = 0.9, \eta \approx 0.0001 $$
 - Momentum accelerates for gradients pointing in the same direction, and reduces for those in changing direction
 
 ### Nesterov Accelerated Gradient (NAG)
+Calcula el peso y corrige si se equivocó.
 
 $$ w_t = w_{t-1} - v_t $$
 $$ v_t = \gamma v_{t-1} + \eta \nabla_{(x-\gamma v_{t-1})}\mathcal{L}(y, \hat y) $$
@@ -89,6 +92,7 @@ $$ v_t = \gamma v_{t-1} + \eta \nabla_{(x-\gamma v_{t-1})}\mathcal{L}(y, \hat y)
 - Anticipates changes in the direction of the gradient
 
 ### Adaptive Gradient (AdaGrad)
+Cada vez vamos avanzando menos y menos. Pondera la tasa de aprendizaje.
 
 $$w_t = w_{t-1} - \eta \frac{1}{\sqrt{G_t + \epsilon}}g_t, \quad \quad g_t=\nabla_w\mathcal{L}(y, \hat y),$$
 $$G_t = \sum_{k=0}^{t}g_t^2, \quad \quad \epsilon \approx 1e^{-8}$$
@@ -98,7 +102,7 @@ $$G_t = \sum_{k=0}^{t}g_t^2, \quad \quad \epsilon \approx 1e^{-8}$$
 - Works well on sparse data and large models
 
 ### Adadelta
-Básicamente es un promedio movible del impacto del pasado sobre la tendencia presente.
+Parecido al de arriba.
 
 $$w_t = w_{t-1} - \eta \frac{1}{\sqrt{\mathbb{E}[g^2]_t}}g_t, \quad \quad g_t = \nabla_w\mathcal{L}(y, \hat y), $$
 $$\mathbb{E}[g^2]_t = \gamma\mathbb{E}[g^2]_{t-1} + (1 - \gamma)g_t^2, \quad \quad \gamma = 0.9$$
@@ -108,7 +112,7 @@ $$\mathbb{E}[g^2]_t = \gamma\mathbb{E}[g^2]_{t-1} + (1 - \gamma)g_t^2, \quad \qu
 - Recursively computes the sum of past gradients using exponential smoothing
 
 ### Adaptive Momentum (Adam)
-Adadelta + Momentum
+Adadelta + Momentum. Esta tiende a converger más rápido.
 
 We have the first moment estimate (mean), 
 $$m_t = \beta_1m_{t-1} + (1 - \beta_1)g_t, \quad \quad$$

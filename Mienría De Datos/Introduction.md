@@ -28,7 +28,7 @@ Es el tipo de aprendizaje más común. Se entranan los modelos usando parejas de
 ### Aprendizaje No Supervisado
 No conocemos las etiquetas *y*, y estamos intersados en entender o manipular los datos. Ejemplo de ellos son **clustering**, **reducción de dimensiones**, **detección de anomalías**.
 
-### Reinforcment Learning
+### Reinforcement Learning
 No existen las *x* y *y*, sino más bien son etapas, acciones y recompensas. Existe un agente que debe aprender a interactuar con el medio para maximizar su recompensa. Ejemplo de ello son los **videojuegos**.
 
 ## Parámetros e Hiperparámetros
