@@ -1,6 +1,6 @@
 # Conceptos Básicos
 
-## Visualización de información
+### Visualización de información
 
 - La **comunicación** de información utilizando **representaciones gráficas**
 - Los sistemas de cómputo para visualización proveen **representaciones visuales** de conjuntos de datos diseñadas para ayudar a la gente a realizar sus **tareas de manera más eficiente**
@@ -15,3 +15,33 @@ Pero, ¿para qué usar visualizaciones?
 
 En resumen, para **contar** historias con datos y para **tomar mejores** decisiones.
 
+### Razones para visualizar
+
+- El sistema visual ocupa aproximadamente 50% del cerebro. 
+- Es un canal enorme con ancho de banda hacia el cerebro. 
+- Además, la interpretación de una imagen se procesa en paralelo.
+
+### Gráfica
+**Definición**
+~~~
+Valores desplegados en un área delimitada por uno o más ejes
+
+Valores codificados como objetos visuales en relación a los ejes
+
+Los ejes proporcionan escalas (cuantitativas y categóricas) usadas para etiquetar y asignar valores a los objetos
+~~~
+
+Por su naturaleza visual, son ideales para **revelar patrones** en los datos y para hacer **comparaciones cualitativas**.
+
+## Tipos de datos
+
+### En función de atributos
+
+$$
+\text{Categóricos / Nominales \quad}
+\begin{cases}
+\cdot \quad \text{Permiten comparar y agrupar}\\
+\cdot \quad \text{No hay ordenamiento implícito, pero con frecuencia tienen jerarquías}\\
+\cdot \quad \text{No es posible realizar operaciones aritméticas}
+\end{cases}
+$$
