@@ -22,7 +22,7 @@ En resumen, para **contar** historias con datos y para **tomar mejores** decisio
 - Además, la interpretación de una imagen se procesa en paralelo.
 
 ### Gráfica
-**Definición**
+
 ~~~
 Valores desplegados en un área delimitada por uno o más ejes
 
@@ -111,7 +111,6 @@ $$
 ### Semántica
 Los datos aislados no tienen sentido.
 
-**Definición**
 ~~~
 Es el significado de esos datos en el mundo real
 ~~~
@@ -120,15 +119,31 @@ Con frecuencia esta información se añade como metadata. Ejemplo de ellos son l
 
 ### Items y Atributos
 
-**Item**
+Item
 ~~~
 Entidad individual, discreta
 Un renglón en una tabla
 ~~~
 
-**Atributo**
+Atributo
 ~~~
 Variable o dimensión
 Propiedad que es observada, medible o registrada
 Una columna en una tabla
 ~~~
+
+### Tipos de conjuntos de datos
+
+**Tabla**
+- Un item por fila
+- Cada columna es un atributo
+- Celda $=$ valor para un item/atributo
+- Una sola llave (puede ser implícita)
+
+**Tabla Multidimensional**
+- Llaves múltiples
+- El valor de una celda sigue representando una asociación item/atributo
+
+| hola | adios
+| --- | --- |
+| <img src="./Screenshot 2023-02-18 at 18.19.41.png" height="100"> | <img src="./Screenshot 2023-02-18 at 18.19.41.png" height="100"> |
