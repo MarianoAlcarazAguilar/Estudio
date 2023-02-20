@@ -64,3 +64,71 @@ $$
    \end{cases}\\
 \end{cases}
 $$
+
+### Relaciones cuantitativas
+
+$$
+\text{Tipos de datos}
+\begin{cases}
+   \cdot \quad \text{Categóricos }(qué)\\
+   \cdot \quad \text{Cuantitativos }(cuánto)
+\end{cases}
+$$
+
+<br>
+
+$$
+\text{Asociaciones\\ categoría-valor}
+\begin{cases}
+   \text{Relaciones entre datos categóricos}
+   \begin{cases}
+      \cdot \quad \text{Nominal}\\
+      \cdot \quad \text{Ordinal}\\
+      \cdot \quad \text{Intervalo}\\
+      \cdot \quad \text{Jerárquica}\\
+   \end{cases}
+   \\
+   \\
+   \text{Relaciones entre datos cuantitativos}
+   \begin{cases}
+      \cdot \quad \text{Ranking}\\
+      \cdot \quad \text{Tasa}\\
+      \cdot \quad \text{Correlación}\\
+   \end{cases}
+\end{cases}
+$$
+
+### Datos cuantitativos
+
+- Binarios, continuos o discretos
+- Escalares
+   - Un número o atributo en un registro (celda)
+- Vectores
+   - Varios números en un registro
+- Tensores
+   - Muchos números en un registro. Se definen por su rango y dimensionalidad, representados por un arreglo o matriz
+
+### Semántica
+Los datos aislados no tienen sentido.
+
+**Definición**
+~~~
+Es el significado de esos datos en el mundo real
+~~~
+
+Con frecuencia esta información se añade como metadata. Ejemplo de ellos son los diccionarios que se agregan a las tablas para explicar sus significados.
+
+### Items y Atributos
+
+**Item**
+~~~
+Entidad individual, discreta
+Un renglón en una tabla
+~~~
+
+**Atributo**
+~~~
+Variable o dimensión
+Propiedad que es observada, medible o registrada
+Una columna en una tabla
+~~~
