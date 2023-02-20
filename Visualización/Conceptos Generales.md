@@ -63,3 +63,4 @@ $$
       \cdot \quad \text{Permiten realizar operaciones aritméticas}\\
    \end{cases}\\
 \end{cases}
+$$
