@@ -14,6 +14,7 @@ Estas son las funciones que se busca minimizar.
 - También se le conoce como $L2$ loss.
 - Es buena para tareas de **regresión**
 - Trivial derivative for gradient descent
+
 $$
 \mathcal{l}_{mse} = \frac{1}{M}\sum_{m=i}^M(y^{(i)} - \hat y^{(i)})^2
 $$
