@@ -146,4 +146,4 @@ Una columna en una tabla
 
 | hola | adios
 | --- | --- |
-| <img src="./Screenshot 2023-02-18 at 18.19.41.png" height="100"> | <img src="./Screenshot 2023-02-18 at 18.19.41.png" height="100"> |
+| <img src="./Screenshot 2023-02-18 at 18.19.41.png"> | <img src="./Screenshot 2023-02-18 at 18.19.41.png"> |
