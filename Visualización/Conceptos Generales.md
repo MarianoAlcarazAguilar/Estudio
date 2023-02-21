@@ -144,3 +144,111 @@ Una columna en una tabla
 - Llaves múltiples
 - El valor de una celda sigue representando una asociación item/atributo
 
+**Redes y árboles**
+- Atributos pueden estar asociados a los enlaces o a los nodos
+- Un árbol no tiene ciclos
+
+**Espaciales**
+- Campos
+- Geográficos
+
+## Marcadores y Canales Visuales
+
+### Marcadores
+
+~~~
+Elementos geométricos utilizados para representar ítems, grafos o listas
+~~~
+
+Se utilizan para mapear en un espacio de dos dimensiones los ítems o enlaces/vínculos que deseamos mostrar.  
+
+- Se trata de elementos geométricos básicos:
+   - Puntos
+   - Líneas
+   - Áreas
+   - Los volúmenes se utilizan muy raramente
+
+### Canales Visuales
+
+~~~
+Propiedades de los marcadores para representar atributos. 
+Controlan la apariencia de los marcadores.
+~~~
+
+- Posición
+- Color
+- Forma
+- Orientación
+- Tamaño
+- Volumen
+
+### Cuándo usar qué canal
+
+**Expresividad**
+
+- Tratar de alinear el tipo de canal con el tipo de dato
+- La codificación seleccionada debe permitir mostrar toda (y solamente) la información de los atributos del dataset
+   - Datos no ordenados NO deberían insinuar orden pero sí una categoría
+
+**Efectividad**
+
+- Algunos canales simplemente son mejores que otros para transmitir el mensaje que deseamos comunicar
+- La importancia del atributo debe coincidir con la prominencia del canal
+
+| Tipo | Atributo | Capacidad para representar una cantidad |
+| --- | --- | --- |
+| Forma | Longitud <br> Anchura <br> Orientación <br> Tamaño <br> Forma <br> Bordeado | Sí <br> Sí, pero limitado <br> Sí, pero limitado <br> Sí, pero limitado <br> No <br> No |
+| Color | Tonalidad <br> Intensidad | No (Discutible) <br> Sí, pero limitado |
+| Posición | Posición 2D | Sí |
+
+### Efectividad de los canales
+
+Es importante destacar que el sistema perceptua opera con **juicios relativos**, no absolutos. Además, distintos canales visuales se perciben con diferente precisión.  
+
+<br>
+
+Hay que tomar en cuenta los siguientes criterios:
+- **Exactitud**: Qué tan precisamente podemos identificar e interpretar la diferencia entre ítems codificados
+   - Factores que la afectan: 
+      - distractores
+      - alineación
+      - distancia
+- **Discriminación**: Cuántos pasos únicos podemos percibir. Indica si se pueden distinguir valores de los atributos con los pasos o niveles que ofrece el canal
+   - Al menos tantos niveles como valores pueda tener el atributo
+- **Separabilidad**: Qué tanto nuestra habilidad para utilizar un canal es modificada por otros canales
+   - Muy pocos canales son ortogonales y no interfieren entre sí. Ejemplo: color y posición
+   - Si interfieren entre sí, debe minimizarse el uso de cada canal para distintos atributos
+- **Resaltado**: Cómo puede resaltar algo utilizando cierto canal
+   - Muchos canales permiten resaltar un ítem en particular
+   - Factores que lo favorecen:
+      - Longitud
+      - Ancho
+      - Orientación
+      - Dirección
+      - Forma
+      - Tamaño
+      - Bordeado
+      - Sombra
+
+### Algunas recomendaciones
+
+**Atributos Ordenados** 
+
+<img src=".png">
+
+**Atributos Categóricos**
+
+<img src='.png'>
+
+Lamentablemente, la efectividad es altamente subjetiva y depende, entre otros:
+
+- Antecedentes y madurez analítica
+- Habilidades perceptuales
+- Gustos
+- Contexto
+
+Lo que sí es cierto, es que el tener una **escala común** permite aumentar la exactitud de las comparaciones subjetivas.
+
+### Luminancia y juicio relativo
+
+La percepción de luminancia es contextual y basada en el contraste de los objetos circundantes
