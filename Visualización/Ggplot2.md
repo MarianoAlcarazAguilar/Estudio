@@ -25,7 +25,7 @@ Tema $\quad \rightarrow \quad$ Controla los aspectos finos del desplegado como t
 
 <div align='right'><b>Ejemplo</b></div>
 
-~~~R
+~~~r
 # solo necesario la primera vez
 library(ggplot2)
 
