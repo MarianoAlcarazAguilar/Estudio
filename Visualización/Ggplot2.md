@@ -36,3 +36,42 @@ ggplot(data = economics, aes(x=date, y=unemploy)) +
    geom_point()
 ~~~
 
+<div align='right'><b>Ejemplo</b> muy detallado</div>
+
+~~~r
+library(ggplot2)
+
+ggplot() +
+   coord_cartesian() +
+   scale_x_continuous() +
+   scale_y_continuous() +
+   # Agregamos una capa con todas las especificaciones
+   layer(
+      data = diamonds,
+      mapping = aes(x = carat, y = price),
+      stat = "identity",
+      geom = "point",
+      position = position_identity()
+   )
+~~~
+
+<div align='right'><b>Ejemplo</b> datos categóricos</div>
+
+~~~r
+library(ggplot2)
+
+ggplot() +
+   coord_cartesian() +
+   # Aquí cambia el tipo de coordenadas
+   scale_x_discrete() +
+   scale_y_continuous() +
+   layer(
+      data = diamonds, 
+      mapping = aes(x = cut, y = price),
+      stat = "identity",
+      geom = "point",
+      position = position_identity()
+   )
+~~~
+
+
