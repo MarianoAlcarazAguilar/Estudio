@@ -36,7 +36,7 @@ ggplot(data = economics, aes(x=date, y=unemploy)) +
    geom_point()
 ~~~
 
-<div align='right'><b>Ejemplo</b> muy detallado</div>
+<div align='right'><b>Ejemplo</b> <br>Muy detallado</div>
 
 ~~~r
 library(ggplot2)
@@ -55,7 +55,7 @@ ggplot() +
    )
 ~~~
 
-<div align='right'><b>Ejemplo</b> datos categóricos</div>
+<div align='right'><b>Ejemplo</b> <br> Datos categóricos</div>
 
 ~~~r
 library(ggplot2)
@@ -75,3 +75,104 @@ ggplot() +
 ~~~
 
 
+<div align='right'><b>Ejemplo</b><br>Dispersando Datos</div>
+
+~~~r
+ggplot() +
+   coord_cartesian() +
+   scale_x_discrete() +
+   scale_y_continuous() +
+   layer(
+      data = diamonds,
+      mapping = aes(x = cut, y = price),
+      stat = "identity",
+      geom = "point",
+      # Esto es lo nuevo
+      position = position_jitter(width = 0.3, height = 0)
+   )
+~~~ 
+
+<div align='right'><b>Ejemplo</b><br>Añadir estadísticas</div>
+
+~~~r
+ggplot() +
+   coord_cartesian() +
+   scale_x_discrete() +
+   scale_y_continuous() +
+   layer(
+      data = diamonds,
+      mappping = aes(x = cut, y = price),
+      # Especificamos un nuevo tipo de stat
+      stat = "boxplot",
+      # Nuevo tipo de geom
+      geom = "boxplot",
+      # nueva posición
+      # para que no se empalmen las cajas
+      postion = position_dodge()
+   )
+~~~
+
+<div align='right'><b>Ejemplo</b><br>Añadir varias capas</div>
+
+~~~r
+ggplot() +
+   coord_cartesian() +
+   scale_x_discrete() +
+   scale_y_continuous() +
+   layer(
+      data = diamonds,
+      mapping = aes(x = cut, y = price),
+      stat = "identity",
+      geom = "point",
+      position = position_jitter(width = 0.2, height = 0)
+   ) +
+   # Se pone otra layer sobre la anterior
+   layer(
+      data = diamonds, 
+      mapping = aes(x = cut, y = price),
+      stat = "boxplot",
+      geom = "boxplot",
+      list(color = "red", fill = "red", alpha = 0.5),
+      position = position_identity()
+   )
+~~~
+
+<div align='right'><b>Ejemplo</b><br>Color por categorías</div>
+
+~~~r
+ggplot() +
+   coord_cartesian() +
+   scale_x_continuous() +
+   scale_y_continuous() +
+   # Aquí esto es nuevo
+   scale_color_hue() +
+   layer(
+      data = diamonds,
+      # En este caso el 'color' de la derecha corresponde a una columna con ese nombre 
+      mapping = aes(x = carat, y = price, color = color),
+      stat = "identity",
+      geom = "point",
+      position = position_identity()
+   )
+~~~
+
+<div align='right'><b>Ejemplo</b><br>Añadir Facets</div>
+
+~~~r
+ggplot() +
+   coord_cartesian() +
+   scale_x_continuous() +
+   scale_y_continuous() +
+   scale_color_hue() +
+   # Se crea una faceta para cada tipo de corte distinto
+   facet_wrap(~cut)+
+   layer(
+      data = diamonds,
+      mapping = aes(x = carat, y = price, color = color),
+      stat = "identity",
+      geom = "point",
+      position = position_identity()
+   )
+~~~
+
+<div align='right'><b>Ejemplo</b><br>Gráfica de Barras</div>
