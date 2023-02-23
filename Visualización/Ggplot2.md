@@ -36,6 +36,10 @@ ggplot(data = economics, aes(x=date, y=unemploy)) +
    geom_point()
 ~~~
 
+<div align="center">
+   <img src="./images/.png">
+</div>
+
 <div align='right'><b>Ejemplo</b> <br>Muy detallado</div>
 
 ~~~r
@@ -54,6 +58,10 @@ ggplot() +
       position = position_identity()
    )
 ~~~
+
+<div align="center">
+   <img src="./images/.png">
+</div>
 
 <div align='right'><b>Ejemplo</b> <br> Datos categóricos</div>
 
@@ -74,6 +82,9 @@ ggplot() +
    )
 ~~~
 
+<div align="center">
+   <img src="./images/.png">
+</div>
 
 <div align='right'><b>Ejemplo</b><br>Dispersando Datos</div>
 
@@ -91,6 +102,10 @@ ggplot() +
       position = position_jitter(width = 0.3, height = 0)
    )
 ~~~ 
+
+<div align="center">
+   <img src="./images/.png">
+</div>
 
 <div align='right'><b>Ejemplo</b><br>Añadir estadísticas</div>
 
@@ -111,6 +126,10 @@ ggplot() +
       postion = position_dodge()
    )
 ~~~
+
+<div align="center">
+   <img src="./images/.png">
+</div>
 
 <div align='right'><b>Ejemplo</b><br>Añadir varias capas</div>
 
@@ -137,6 +156,10 @@ ggplot() +
    )
 ~~~
 
+<div align="center">
+   <img src="./images/.png">
+</div>
+
 <div align='right'><b>Ejemplo</b><br>Color por categorías</div>
 
 ~~~r
@@ -155,6 +178,10 @@ ggplot() +
       position = position_identity()
    )
 ~~~
+
+<div align="center">
+   <img src="./images/.png">
+</div>
 
 <div align='right'><b>Ejemplo</b><br>Añadir Facets</div>
 
@@ -175,4 +202,52 @@ ggplot() +
    )
 ~~~
 
+<div align="center">
+   <img src="./images/.png">
+</div>
+
 <div align='right'><b>Ejemplo</b><br>Gráfica de Barras</div>
+
+~~~r
+ggplot() +
+   coord_cartesian() +
+   scale_x_discrete() +
+   scale_y_continuous() +
+   layer(
+      data = diamonds,
+      mapping = aes(x = color),
+      # Cuenta las observaciones
+      stat = "count",
+      # Dibuja una barra para cada cuenta
+      geom = "bar",
+      position = position_identity()
+   )
+~~~
+
+<div align="center">
+   <img src="./images/.png">
+</div>
+
+<div align='right'><b>Ejemplo</b><br>Malla Gráficas</div>
+
+~~~r
+ggplot() +
+   coord_cartesian() +
+   scale_x_discrete() +
+   scale_y_continuous() +
+   # Esto es nuevo
+   # Renglones: claridad
+   # Columnas: corte
+   facet_grid(clarity~cut)+
+   layer(
+      data = diamonds, 
+      mapping = aes(x = color),
+      stat = "count",
+      geom = "bar",
+      position = position_identity()
+   )
+~~~
+
+<div align="center">
+   <img src="./images/.png">
+</div>
