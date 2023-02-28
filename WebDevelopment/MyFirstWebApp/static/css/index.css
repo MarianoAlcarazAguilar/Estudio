@@ -1,0 +1,46 @@
+/* Style for the entire body */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+/* Style for the heading */
+h1 {
+   font-size: 2.5rem;
+   text-align: center;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+}
+
+/* Style for the form */
+form {
+   margin: 0 auto;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Style for the file input */
+input[type="file"] {
+   margin-top: 1rem;
+   padding: 0.5rem;
+   border-radius: 0.25rem;
+   border: 1px solid #ccc;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+   margin-top: 1rem;
+   background-color: #4CAF50;
+   color: #fff;
+   border: none;
+   padding: 0.5rem 1rem;
+   border-radius: 0.25rem;
+   cursor: pointer;
+}
+
+/* Style for the submit button on hover */
+input[type="submit"]:hover {
+   background-color: #3e8e41;
+}
