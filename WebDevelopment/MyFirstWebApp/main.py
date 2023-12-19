@@ -53,4 +53,4 @@ def return_file():
    return send_file(f'./static/transformed_files/{name}_transformed.csv')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
